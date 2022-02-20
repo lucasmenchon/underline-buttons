@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Botoes</title>
+    <link rel="stylesheet" href="botoes.css">
+</head>
+<body>
+
+<div class="container">
+
+    <a id="active" href="#" class="btn btn-left">ESQUERDA</a>
+    <a id="active" href="#" class="btn btn-left">ESQUERDA</a>
+    <a id="active" href="#" class="btn btn-left">ESQUERDA</a>
+    <a id="active" href="#" class="btn btn-left">ESQUERDA</a>
+
+   <!-- <a id="active" href="#" class="btn btn-center">CENTRO</a>
+
+    <a id="active" href="#" class="btn btn-bottom">BAIXO</a>-->
+
+</div>
+
+<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+
+<script type="text/javascript">
+    $(document).on('click','a', function(){
+        $(this).removeClass('btn-left').siblings().addClass('btn-left')
+    })
+</script>
+
+<!--<script type="text/javascript">
+    $(document).on('click','a', function(){
+        $(this).removeClass('btn-left').siblings().addClass('btn-left')
+    })
+</script>
+
+<script type="text/javascript">
+    $(document).on('click','a', function(){
+        $(this).removeClass('btn-bottom').siblings().addClass('')
+    })
+</script>-->
+
+</body>
+</html>
